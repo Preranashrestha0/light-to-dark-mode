@@ -1,0 +1,154 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: aliceblue;
+}
+
+header, footer {
+    background-color: rgb(136, 195, 247);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-bar {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-bar i {
+    margin: 5px;
+}
+
+.display-toggle {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: none;
+    gap: 1rem;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    background-color: rgb(108, 163, 211);
+    width: 20%;
+    text-align: center;
+}
+
+.nav-links li {
+    padding: 1rem 0;
+}
+
+.nav-links li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links li a:hover {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 5px;
+}
+
+.carousel {
+    margin-top: 70px;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.carousel-slide img {
+    margin: 20px;
+    width: 30%;
+    min-width: 30%;
+    height: 40%;
+    min-height: 40%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.card img {
+    width: 90%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 1rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-links {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-links li a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links li a:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #333333;
+    color: #ffffff;
+}

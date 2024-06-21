@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fully Functional Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-bar" onclick="toggleMenuBar()">
+                <i class="ri-menu-line"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="display-toggle" onclick="toggleTheme()">
+                <i class="ri-moon-line" id="theme-icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qhmtWD1VfxdqcU2cc-ulZOtyq_reZtYayA&s" alt="Slide 1">
+                <img src="https://t4.ftcdn.net/jpg/03/00/94/69/360_F_300946931_kSR84OqudEhsmBZH47HU6ud7aZIDMjEx.jpg" alt="Slide 2">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/036/883/577/small_2x/ai-generated-the-beautiful-sunset-view-with-the-blue-sky-and-clouds-in-summer-photo.jpg" alt="Slide 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qhmtWD1VfxdqcU2cc-ulZOtyq_reZtYayA&s" alt="Slide 1">
+            <h2>Card 1</h2>
+            <p>Some description for card 1.</p>
+        </div>
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/03/00/94/69/360_F_300946931_kSR84OqudEhsmBZH47HU6ud7aZIDMjEx.jpg" alt="Slide 2">
+            <h2>Card 2</h2>
+            <p>Some description for card 2.</p>
+        </div>
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/036/883/577/small_2x/ai-generated-the-beautiful-sunset-view-with-the-blue-sky-and-clouds-in-summer-photo.jpg" alt="Slide 3">
+            <h2>Card 3</h2>
+            <p>Some description for card 3.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prerana</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
